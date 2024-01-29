@@ -18,7 +18,8 @@
         "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {
-        "symfony/debug-bundle": "7.0.*"
+        "symfony/debug-bundle": "7.0.*",
+        "symfony/maker-bundle": "^1.52"
     },
     "config": {
         "allow-plugins": {
