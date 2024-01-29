@@ -1,0 +1,13 @@
+{
+  "name": "primeiro_projeto",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch": "symfony run -d --watch=config,src,templates,vendor symfony console cache:clear"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
