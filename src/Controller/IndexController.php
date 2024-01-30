@@ -13,9 +13,7 @@ class IndexController extends AbstractController
     {
         $posts = $this->getPosts();
         
-        return $this->render('index/index.html.twig',[
-            'controller_name' => 'IndexController',
-        ]);
+        return $this->render('index/index.html.twig', compact('posts'));
     }
     
     #[Route('/post/{slug?}', name: 'app_show')]

@@ -9,12 +9,15 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Hello {{ controller_name }}! ✅</h1>
+    <h1>Postagens </h1>
 
-    This friendly message is coming from:
+    Recentes: 
     <ul>
-        <li>Your controller at <code><a href="src/Controller/IndexController.php">src/Controller/IndexController.php</a></code></li>
-        <li>Your template at <code><a href="templates/index/index.html.twig">templates/index/index.html.twig</a></code></li>
+        {% for post in posts %}
+        <li>
+            {{ post.title}}
+        </li>
+        {% endfor %}
     </ul>
 </div>
 {% endblock %}
