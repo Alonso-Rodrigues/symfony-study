@@ -9,14 +9,16 @@
 </style>
 
 <div class="example-wrapper">
-    <h1>Postagens </h1>
+    <h1>Posts Pizza 🍕</h1>
 
-    Recentes: 
+    Recent: 
     <ul>
         {% for post in posts %}
         <li>
-            {{ post.title}}
+            {{ post.title}} - <a href="{{ path ('app_show', {slug: post.slug}) }}">Read Now</a>
         </li>
+        {% else %}
+            <h3>Nothing to declare</h3>
         {% endfor %}
     </ul>
 </div>

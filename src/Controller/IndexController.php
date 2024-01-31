@@ -26,11 +26,11 @@ class IndexController extends AbstractController
     private function getPosts(): array
     {
         return[
-            ['id' => 1, 'title' => 'Teste Postagem 1'],
-            ['id' => 2, 'title' => 'Teste Postagem 2'],
-            ['id' => 3, 'title' => 'Teste Postagem 3'],
-            ['id' => 4, 'title' => 'Teste Postagem 4'],
-            ['id' => 5, 'title' => 'Teste Postagem 5']
+            ['id' => 1, 'title' => 'Test Post 1', 'slug' => 'postage-test-1'],
+            ['id' => 2, 'title' => 'Test Post 2', 'slug' => 'postage-test-2'],
+            ['id' => 3, 'title' => 'Test Post 3', 'slug' => 'postage-test-3'],
+            ['id' => 4, 'title' => 'Test Post 4', 'slug' => 'postage-test-4'],
+            ['id' => 5, 'title' => 'Test Post 5', 'slug' => 'postage-test-5']
         ];
     }
     
